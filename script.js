@@ -26,11 +26,7 @@ function apiCall(id, load){
 
       
       
-        if(load && index < locations.length - 1){
-          index++;
-          apiCall(locations[index], true);
-          // index++;
-        }
+
         
         let res = JSON.parse(response)
         let para = res.list[0].components
@@ -55,6 +51,12 @@ function apiCall(id, load){
             humi = res2.main.humidity;
             addDevice(id,  para, temp, humi)
             recText(id, "adil", para.pm2_5)
+
+            if(load && index < locations.length - 1){
+              index++;
+              apiCall(locations[index], true);
+              // index++;
+            }
       
         })
         .catch(function(error) {
