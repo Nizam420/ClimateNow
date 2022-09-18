@@ -412,7 +412,7 @@ input:checked + .slider:before {
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-left: 80px;
+    /* margin-left: 80px; */
   }
 
   #greeting{
