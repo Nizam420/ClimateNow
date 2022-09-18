@@ -447,7 +447,7 @@ function input(){
       x.focus();
   }
   else{
-    alert("Device already added.");
+    alert("Location already added.");
   }
 }
 
