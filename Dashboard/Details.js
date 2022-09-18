@@ -720,7 +720,9 @@ function cMode(){
     document.getElementById("light").style.opacity = ".5";
     document.querySelector("html").style.backgroundColor = "black";
     document.getElementById("fullscreen").style.backgroundColor = "rgb(53 51 51)";
+    document.getElementById("my-logo").src = "Logo Climate_NowR.jpg";
     let x = document.getElementsByClassName("items");
+    document.getElementById("location").style.color = "white";
     for(var i = 0; i < x.length; i++){
       x[i].style.backgroundColor = "rgb(32, 31, 31)";
       x[i].style.color = "white";
@@ -738,6 +740,8 @@ function cMode(){
     document.querySelector("html").style.backgroundColor = "rgb(223, 223, 211)";
     document.getElementById("fullscreen").style.backgroundColor = "rgb(204 204 204)";
     let x = document.getElementsByClassName("items");
+    document.getElementById("location").style.color = "black";
+    document.getElementById("my-logo").src = "Logo Climate_Now.jpg";
     for(var i = 0; i < x.length; i++){
       x[i].style.backgroundColor = "white";
       x[i].style.color = "black";
@@ -763,7 +767,9 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById("light").style.opacity = ".5";
       document.querySelector("html").style.backgroundColor = "black";
       document.getElementById("fullscreen").style.backgroundColor = "rgb(53 51 51)";
+      document.getElementById("my-logo").src = "Logo Climate_NowR.jpg";
       let x = document.getElementsByClassName("items");
+      document.getElementById("location").style.color = "white";
       for(var i = 0; i < x.length; i++){
         x[i].style.backgroundColor = "rgb(32, 31, 31)";
         x[i].style.color = "white";
@@ -781,6 +787,8 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById("light").style.opacity = "1";
       document.getElementById("fullscreen").style.backgroundColor = "rgb(204 204 204)";
       let x = document.getElementsByClassName("items");
+      document.getElementById("my-logo").src = "Logo Climate_Now.jpg";
+      document.getElementById("location").style.color = "black";
       for(var i = 0; i < x.length; i++){
         x[i].style.backgroundColor = "white";
         x[i].style.color = "black";

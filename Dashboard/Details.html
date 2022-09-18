@@ -17,7 +17,8 @@
     <nav >
         <div id="nav" class="nav-mobile">
             <div class="nav-container">
-                <div id="refresh" onclick="goBack()"><i class="fas fa-arrow-left"></i></div>
+                <div class="back-btn"><img id="my-logo" src="../Logo Climate_Now.jpg" alt="" width="200" height="35" style="border-radius: 5px; margin-left: 15px;"></div>
+
                 <!-- <h3 id="dev-name" style="display: none;">TERRA1005</h3> -->
                 <div class="top-portion">
                     <p id="greeting">Good Morning</p>
@@ -37,7 +38,12 @@
     </nav>
 
     <div class="loca" >
-        <p id="location"></p>
+        <div class="loca-item">
+            <div id="refresh" onclick="goBack()"><i class="fas fa-arrow-left"></i></div>
+            <p id="location"></p>
+            <div></div>
+        </div>
+
     </div>
     
 
@@ -246,7 +252,11 @@
         </div>
     </div>
     <p>MINSAR - ADIL - NIZAM - ARIF - SHADMAN</p>
-    <p style="white-space: nowrap;">Powered by <p style="color: rgb(55, 174, 243); cursor: pointer;"> MANAS</p></p>
+    <div class="powered" style="display:flex">
+        <p style="white-space: nowrap;">Powered by  </p>
+        <P style="color: blue;"> &#160;Team MANAS</P>
+    </div>
+
 </div>
 
 <div class="under-footer">

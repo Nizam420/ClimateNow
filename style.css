@@ -49,10 +49,6 @@
   cursor: pointer;
 }
 
-.deletebtn{
-
-}
-
 .screen{
   width: 100%;
   display: grid;
@@ -422,7 +418,7 @@
 }
 
 .adButton {
-    width: 120px;
+    width: 135px;
     height: 35px;
     font-size: 15px;
     font-weight: 700;
@@ -476,5 +472,9 @@ margin-right: auto;
   padding: 10px;
 }
 
-
-/* css end */
+.dev-list{
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin: 15px 0;
+}
