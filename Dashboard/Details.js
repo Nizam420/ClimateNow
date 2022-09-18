@@ -93,8 +93,8 @@ var opts_vps = {
   highDpiSupport: true,     // High resolution support
   staticZones: [
     {strokeStyle: "rgb(9, 187, 9)", min: 0, max: 30}, // Red from 100 to 130
-    {strokeStyle: "rgb(238, 182, 0)", min: 31, max: 70}, // Yellow
-    {strokeStyle: "rgb(219, 24, 24)", min: 71, max : 100}, // Green  
+    {strokeStyle: "rgb(238, 182, 0)", min: 30, max: 70}, // Yellow
+    {strokeStyle: "rgb(219, 24, 24)", min: 70, max : 100}, // Green  
  ],
  strokeColor: '#F03E3E',
   
@@ -516,7 +516,7 @@ var color = {
         gaugeO3.set(res.o3);
         gaugeVPS.set(vps(res.co, res.nh3));
         gaugeSo2.set(res.so2);
-        gaugeNh3.set(vps(res.co, res.nh3));
+        gaugeNh3.set(res.nh3);
 
         document.getElementById("location").innerHTML = "Hey " + latLon[2] + "!&#128079";
         // document.getElementById("humi-value").innerHTML = Math.round(res.no);
