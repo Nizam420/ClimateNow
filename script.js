@@ -82,103 +82,123 @@ function apiCall(id, load){
 
 
 var colours = {
-    co : function(val){
-      if(val <= 400){
+  co : function(val){
+    if(val <= 400){
+      return 'rgb(9 187 9)';
+    }
+    else if(val <= 1000){
+      return 'rgb(238 182 0)';
+    }
+    else{
+      return 'rgb(219 24 24)';
+    }
+  },
+
+  no: function(val){
+    if(val < 34){
+      return 'rgb(9 187 9)';
+    }
+    else if(val <= 51){
+      return 'rgb(238 182 0)';
+    }
+    else{
+      return 'rgb(219 24 24)';
+    }
+  },
+
+  no2 : function(val){
+    if(val < 31){
+      return 'rgb(9 187 9)';
+    }
+    else if(val <= 70){
+      return 'rgb(238 182 0)';
+    }
+    else{
+      return 'rgb(219 24 24)';
+    }
+  },
+
+  o3 : function(val){
+    if(val <= 1){
+      return 'rgb(9 187 9)';
+    }
+    else if(val <= 10){
+      return 'rgb(238 182 0)';
+    }
+    else{
+      return 'rgb(219 24 24)';
+    }
+  },
+
+  pm25 : function(val){
+    if(val <= 50){
+      return 'rgb(9 187 9)';
+    }
+    else if(val <= 100){
+      return 'rgb(238 182 0)';
+    }
+    else{
+      return 'rgb(219 24 24)';
+    }
+  },
+
+  pm10 : function(val){
+    if(val <= 27){
+      return 'rgb(9 187 9)';
+    }
+    else if(val <= 30){
+      return 'rgb(238 182 0)';
+    }
+    else{
+      return 'rgb(219 24 24)';
+    }
+  },
+
+  nh3 : function(val){
+    if(val <= 2500){
+      return 'rgb(9 187 9)';
+    }
+    else if(val <= 4500){
+      return 'rgb(238 182 0)';
+    }
+    else{
+      return 'rgb(219 24 24)';
+    }
+  },
+
+  so2 : function(val){
+    if(val <= 100){
+      return 'rgb(9 187 9)';
+    }
+    else if(val <= 400){
+      return 'rgb(238 182 0)';
+    }
+    else{
+      return 'rgb(219 24 24)';
+    }
+  },
+    thermal_comfort : function name(val) {
+      if(val == 'good'){
         return 'rgb(9 187 9)';
       }
-      else if(val <= 1000){
-        return 'rgb(238 182 0)';
+      else if(val == 'moderate'){
+        return 'rgb(238 182 0)'
       }
       else{
-        return 'rgb(219 24 24)';
+        return 'rgb(219 24 24)'
       }
     },
-  
-    no: function(val){
-      if(val < 34){
+    vps : function(val){
+      if(val < 31){
         return 'rgb(9 187 9)';
       }
-      else if(val <= 51){
-        return 'rgb(238 182 0)';
+      else if(val < 70){
+        return 'rgb(238 182 0)'
       }
       else{
-        return 'rgb(219 24 24)';
-      }
-    },
-  
-    no2 : function(val){
-      if(val < 101){
-        return 'rgb(9 187 9)';
-      }
-      else if(val <= 200){
-        return 'rgb(238 182 0)';
-      }
-      else{
-        return 'rgb(219 24 24)';
-      }
-    },
-  
-    o3 : function(val){
-      if(val <= 120){
-        return 'rgb(9 187 9)';
-      }
-      else if(val <= 180){
-        return 'rgb(238 182 0)';
-      }
-      else{
-        return 'rgb(219 24 24)';
-      }
-    },
-  
-    pm25 : function(val){
-      if(val <= 50){
-        return 'rgb(9 187 9)';
-      }
-      else if(val <= 100){
-        return 'rgb(238 182 0)';
-      }
-      else{
-        return 'rgb(219 24 24)';
-      }
-    },
-  
-    pm10 : function(val){
-      if(val <= 27){
-        return 'rgb(9 187 9)';
-      }
-      else if(val <= 30){
-        return 'rgb(238 182 0)';
-      }
-      else{
-        return 'rgb(219 24 24)';
-      }
-    },
-  
-    nh3 : function(val){
-      if(val <= 2500){
-        return 'rgb(9 187 9)';
-      }
-      else if(val <= 4500){
-        return 'rgb(238 182 0)';
-      }
-      else{
-        return 'rgb(219 24 24)';
-      }
-    },
-  
-    so2 : function(val){
-      if(val <= 100){
-        return 'rgb(9 187 9)';
-      }
-      else if(val <= 400){
-        return 'rgb(238 182 0)';
-      }
-      else{
-        return 'rgb(219 24 24)';
+        return 'rgb(219 24 24)'
       }
     }
-
-  
   }
 
 function addDevice(id, res, temp, humi){
