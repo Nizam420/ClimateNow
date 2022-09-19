@@ -9,3 +9,5 @@ Then we need to click the save button, Now the location will be added to the hom
 In each card, there is a 'Dashboard' button, if we click the button we will get the detailed climate condition of the area.
 
 The 'Dashboard' page has two themes 1. Light, 2. Dark, people can easily switch the theme as per their choice.
+
+URL of the Application - https://subtle-dragon-a68517.netlify.app/
